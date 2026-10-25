@@ -1,0 +1,10 @@
+node_modules/
+# Safety net: personal data normally lives in ~/.amazon-now-mcp, outside the repo.
+# If you point AMAZON_NOW_HOME / AMAZON_NOW_PROFILE_DIR / AMAZON_NOW_DATA_DIR into the repo, these stay out of git.
+.chrome-profile/
+chrome-profile/
+data/
+.env
+.env.*
+*.log
+*.tgz

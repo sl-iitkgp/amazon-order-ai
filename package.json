@@ -1,0 +1,49 @@
+{
+  "name": "amazon-now-mcp",
+  "version": "0.2.0",
+  "description": "MCP server for Amazon Now (amazon.in 10-minute delivery): turn a grocery list into a ready cart. Search, pantry from your order history, add to cart. Never checks out.",
+  "type": "module",
+  "main": "src/server.js",
+  "bin": {
+    "amazon-now-mcp": "src/cli.js"
+  },
+  "files": [
+    "src",
+    "scripts",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node src/server.js",
+    "login": "node scripts/login.js",
+    "scan": "node scripts/scan-history.js",
+    "smoke": "node scripts/smoke.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "claude",
+    "amazon",
+    "amazon-now",
+    "amazon-india",
+    "grocery",
+    "quick-commerce"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sl-iitkgp/amazon-order-ai.git"
+  },
+  "homepage": "https://github.com/sl-iitkgp/amazon-order-ai#readme",
+  "bugs": {
+    "url": "https://github.com/sl-iitkgp/amazon-order-ai/issues"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "puppeteer-core": "^24.10.0",
+    "zod": "^3.25.0"
+  }
+}
